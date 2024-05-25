@@ -10,16 +10,16 @@
     <div class="container">
         <h2>JS Regex form</h2>
         <form class="form">
-            <p class="label">Enter your username Here:</p>
-            <input type="text" placeholder="Your Name" class="username input">
-            <p class="label">Enter your email Here:</p>
-            <input type="email" placeholder="Your email" class="email input">
-            <p class="label">Enter your password Here:</p>
-            <input type="password" placeholder="Your password" class="password input">
-            <p class="label">Enter your CNIC num Here:</p>
-            <input type="number" placeholder="Your CNIC num" class="CNIC input">
-            <p class="label">Enter your age Here:</p>
-            <input type="number" placeholder="Your age" class="age input">
+            <p class="label">Your Name:</p>
+            <input type="text" placeholder="Enter your username here:" class="username input" required>
+            <p class="label">Your email:</p>
+            <input type="email" placeholder="Enter your email Here" class="email input" required>
+            <p class="label">Your password:</p>
+            <input type="password" placeholder="Password must have at least one uppercase letter and a special char." class="password input" required>
+            <p class="label">Your CNIC num:</p>
+            <input type="number" placeholder="CNIC number must be 13 characters long without hyphens (-)." class="CNIC input" required>
+            <p class="label">Your age:</p>
+            <input type="number" placeholder="Enter your age Here" class="age input" required>
             <button class="button" type="submit">Submit.</button>
         </form>
     </div>

@@ -1,4 +1,3 @@
-
 const username = document.querySelector('.username');
 const email = document.querySelector('.email');
 const age = document.querySelector('.age');
@@ -15,28 +14,35 @@ const ageRegex = /^(1[89]|[2-5][0-9]|60)$/;
 form.addEventListener('submit', event => {
     event.preventDefault();
     if (usernameRegex.test(username.value)) {
-        console.log(username.value);
+        // console.log(username.value);
     }else{
-        alert('username must be 4-15 characters long and must not contain whitespaces')
+        alert('Username must be 4-15 characters long, and must not contain whitespaces.')
     }
     if (emailRegex.test(email.value)) {
-        console.log(email.value);
+        // console.log(email.value);
     }else{
         alert('email must contain the @ and the .')
     }
     if (passwordRegex.test(password.value)) {
-        console.log(password.value);
+        // console.log(password.value);
     }else{
-        alert('password doesnot pass the regex')
+        alert('password does not meet the requirements.')
     }
     if (cnicRegex.test(CNIC.value)) {
-        console.log(CNIC.value);
+        // console.log(CNIC.value);
     }else{
-        alert('CNIC doesnot pass the regex')
+        alert('CNIC does not meet the requirements.')
     }
     if (ageRegex.test(age.value)) {
-        console.log(age.value);
+        // console.log(age.value);
     }else{
-        alert('age doesnot pass the regex')
+        alert('age should be 18-60.')
+    }
+    if (usernameRegex.test(username.value) && emailRegex.test(email.value) && passwordRegex.test(password.value) && cnicRegex.test(CNIC.value) && ageRegex.test(age.value)) {
+        console.log(username.value);
+        console.log(email.value);
+        console.log(password.value);
+        console.log(CNIC.value);
+        console.log(age.value);
     }
 })
